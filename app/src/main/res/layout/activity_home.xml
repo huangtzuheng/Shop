@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,8 +22,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/relLayout2">
-        android:layout_below="@+id/relLayout1">
         <include layout="@layout/middle"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_good"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </RelativeLayout>
 
