@@ -30,6 +30,7 @@
         <activity android:name="com.example.user.project.Utils.Profile.ProfileActivity" />
         <activity android:name="com.example.user.project.Utils.Notification.NotificationActivity" />
         <activity android:name="com.example.user.project.Utils.Search.SearchActivity" />
+        <activity android:name="com.example.user.project.Utils.Profile.AccountSettingActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
