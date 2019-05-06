@@ -1156,7 +1156,6 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id pb_loading_indicator
 id percent
 id pin
 id progress_circular
