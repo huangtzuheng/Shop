@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Context mContext = MainActivity.this;
     private RecyclerView mRecyclerView;
     private GoodAdapter mGoodAdapter;
-    public String[] testData = {"a","b","c","d","e","f","g","h"};
+    public String[] testData = {"a","b","c","d","e","f","g","h","i","j","k","l","m"};
 
     //    private TextView mErrorMessageDisplay;
 //    private ProgressBar mLoadingIndicator;
