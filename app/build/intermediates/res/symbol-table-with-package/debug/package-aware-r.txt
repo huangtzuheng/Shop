@@ -147,6 +147,10 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -593,6 +597,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -632,6 +637,7 @@ color foreground_material_light
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color link_blue
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -996,13 +1002,26 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable black_border
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable grey_border
+drawable grey_border_bottem
+drawable ic_action_name
+drawable ic_backarrow
 drawable ic_cart
+drawable ic_checkmark
+drawable ic_checkmark2
+drawable ic_descripion
+drawable ic_description
+drawable ic_display_name
+drawable ic_elipses
+drawable ic_ellipses
+drawable ic_email
 drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1012,7 +1031,9 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notification
 drawable ic_person
+drawable ic_phone
 drawable ic_search
+drawable ic_username
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1028,17 +1049,21 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable ntust
 drawable person
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable white_grey_border_bottom
 drawable white_grey_border_top
 id ALT
+id Buying
 id CTRL
 id FUNCTION
 id META
 id SHIFT
 id SYM
+id SavedItems
+id Selling
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1064,18 +1089,22 @@ id all
 id always
 id async
 id auto
+id backArrow
 id barrier
 id beginning
 id blocking
 id bottom
 id bottomNavViewBar
+id btn_login
 id buttonPanel
 id card_view
 id center
 id center_horizontal
 id center_vertical
 id chains
+id changeProfilePhoto
 id checkbox
+id checkedTextView
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1088,6 +1117,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1096,7 +1126,9 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id display_name
 id edit_query
+id email
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1111,6 +1143,7 @@ id fixed
 id forever
 id ghost_view
 id gone
+id gridView
 id group_divider
 id groups
 id home
@@ -1124,18 +1157,24 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
+id input_email
+id input_password
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id left
+id linLayout
+id linLayout2
 id line1
 id line3
 id listMode
 id list_item
 id ll
+id lvAccountSettings
 id masked
 id message
 id middle
@@ -1157,16 +1196,27 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id phoneNumber
 id pin
+id profileMenu
+id profileName
+id profileProgressBar
+id profileToolBar
+id profile_image
+id profile_photo
 id progress_circular
 id progress_horizontal
 id radio
 id recyclerview_good
 id relLayout1
 id relLayout2
+id relLayout3
+id relLayout4
+id relLayout5
 id right
 id right_icon
 id right_side
+id saveChanges
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1191,6 +1241,8 @@ id selected
 id shortcut
 id showCustom
 id showHome
+id showString
+id showString2
 id showTitle
 id smallLabel
 id snackbar_action
@@ -1216,10 +1268,16 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textEditProfile
+id textPrivateInfo
+id textSetting
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id text_buying
 id text_input_password_toggle
+id text_itemssaved
+id text_selling
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -1240,6 +1298,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_offset_helper
 id visible
 id withText
@@ -1292,7 +1351,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_accountsettings
 layout activity_home
+layout activity_login
+layout activity_login2
+layout activity_profile
 layout bottom
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1308,9 +1371,14 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_editprofile
 layout fragment_home
 layout fragment_messages
+layout fragment_signout
 layout good_list
+layout layout_center_accountsetting
+layout layout_center_profile
+layout layout_center_viewpager
 layout middle
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1323,6 +1391,11 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout snippet_center_editprofile
+layout snippet_top_accountsettingtoolbar
+layout snippet_top_editprofiletoolbar
+layout snippet_top_profile
+layout snippet_top_profilebar
 layout support_simple_spinner_dropdown_item
 layout top
 menu bottom_navigation_menu
@@ -1372,6 +1445,7 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string edit_profile_fragment
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string forgetPS
@@ -1385,6 +1459,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string ps
 string search_menu_title
+string sign_out_fragment
 string status_bar_notification_info_overflow
 string userID
 style AlertDialog_AppCompat
@@ -1908,6 +1983,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
