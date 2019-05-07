@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Login2Activity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".Utils.Home.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,10 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Utils.Cart.CartActivity"></activity>
-        <activity android:name=".Utils.Profile.ProfileActivity"></activity>
-        <activity android:name=".Utils.Notification.NotificationActivity"></activity>
-        <activity android:name=".Utils.Search.SearchActivity"></activity>
+        <activity android:name=".Utils.Cart.CartActivity" />
+        <activity android:name=".Utils.Profile.ProfileActivity" />
+        <activity android:name=".Utils.Notification.NotificationActivity" />
+        <activity android:name=".Utils.Search.SearchActivity" />
     </application>
 
 </manifest>

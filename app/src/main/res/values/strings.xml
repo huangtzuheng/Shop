@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
+    <string name="userID">Account ID / Email</string>
+    <string name="lg">LOGIN</string>
+    <string name="ps">Password</string>
+    <string name="forgetPS">忘記密碼</string>
 </resources>
