@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 07 21:54:25 CST 2019
+#Wed May 08 15:33:55 CST 2019
 0.baseType=DIRECTORY
 0.base=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex

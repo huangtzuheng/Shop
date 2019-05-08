@@ -24,8 +24,14 @@ public class GoodAdapter extends RecyclerView.Adapter<GoodAdapter.GoodAdapterVie
 
         public GoodAdapterViewHolder(View view) {
             super(view);
+//            view.setOnClickListener(this);
             mGoodTextView = (TextView) view.findViewById(R.id.tv_good_data);
             mLinearLayout = (LinearLayout) view.findViewById(R.id.ll);
+        }
+
+//        @Override
+        public void onClick(View v) {
+            int adapterPosition = getAdapterPosition();
         }
     }
 
