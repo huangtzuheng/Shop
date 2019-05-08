@@ -1012,6 +1012,7 @@ drawable design_snackbar_background
 drawable grey_border
 drawable grey_border_bottem
 drawable ic_action_name
+drawable ic_android
 drawable ic_backarrow
 drawable ic_cart
 drawable ic_checkmark
@@ -1062,7 +1063,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id SavedItems
 id Selling
 id action_bar
 id action_bar_activity_content
@@ -1143,6 +1143,8 @@ id fixed
 id forever
 id ghost_view
 id gone
+id gridImageProgressbar
+id gridImageView
 id gridView
 id group_divider
 id groups
@@ -1176,6 +1178,7 @@ id list_item
 id ll
 id lvAccountSettings
 id masked
+id merge
 id message
 id middle
 id mini
@@ -1202,7 +1205,6 @@ id profileMenu
 id profileName
 id profileProgressBar
 id profileToolBar
-id profile_image
 id profile_photo
 id progress_circular
 id progress_horizontal
@@ -1276,7 +1278,6 @@ id textSpacerNoTitle
 id textStart
 id text_buying
 id text_input_password_toggle
-id text_itemssaved
 id text_selling
 id textinput_counter
 id textinput_error
@@ -1379,6 +1380,7 @@ layout good_list
 layout layout_center_accountsetting
 layout layout_center_profile
 layout layout_center_viewpager
+layout layout_grid_imageview
 layout middle
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
