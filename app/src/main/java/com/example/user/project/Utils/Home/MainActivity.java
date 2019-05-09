@@ -16,7 +16,9 @@ import android.widget.TextView;
 
 import com.example.user.project.R;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
+import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Log.d(TAG, "onCreate: starting.");
 
+        initImageLoader();
         setupBottomNavigationView();
         setupViewPager();
         //  made by austin
@@ -47,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         mGoodAdapter = new GoodAdapter(testData);
         mRecyclerView.setAdapter(mGoodAdapter);
 //        mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
+    }
+    private void initImageLoader(){
+        UniversalImageLoader universalImageLoader = new UniversalImageLoader(mContext);
+        ImageLoader.getInstance().init(universalImageLoader.getConfig());
     }
 
     private void setupViewPager() {

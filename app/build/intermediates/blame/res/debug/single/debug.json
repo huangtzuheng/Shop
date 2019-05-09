@@ -4,6 +4,10 @@
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_android.png.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\drawable-hdpi\\ic_android.png"
+    },
+    {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\color\\abc_secondary_text_material_dark.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_android.png.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\drawable-mdpi\\ic_android.png"
     },
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_search.png.flat",
@@ -1584,6 +1592,10 @@
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_android.xml.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\drawable-anydpi\\ic_android.xml"
+    },
+    {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\2d72d8f1cfb29f37da889b46e1f2e751\\res\\layout\\design_navigation_item_separator.xml"
     },
@@ -1770,6 +1782,10 @@
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_android.png.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\drawable-xhdpi\\ic_android.png"
     },
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_backarrow.png.flat",
@@ -2160,6 +2176,10 @@
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_grid_imageview.xml.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\layout\\layout_grid_imageview.xml"
+    },
+    {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -2174,6 +2194,10 @@
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_android.png.flat",
+        "source": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\src\\main\\res\\drawable-xxhdpi\\ic_android.png"
     },
     {
         "merged": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
