@@ -1,6 +1,7 @@
 package com.example.user.project.Utils.Home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -13,14 +14,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.user.project.R;
+import com.example.user.project.Utils.Detail.DetailActivity;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.example.user.project.Utils.Home.GoodAdapter.GoodAdapterOnClickHandler;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodAdapterOnClickHandler {
     private static final String TAG = "MainActivity";
     private static final int ACTIVITY_NUM = 0;
     private Context mContext = MainActivity.this;
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 = new GridLayoutManager(this, 2);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
-        mGoodAdapter = new GoodAdapter(testData);
+        mGoodAdapter = new GoodAdapter(testData, this);
         mRecyclerView.setAdapter(mGoodAdapter);
 //        mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
     }
@@ -76,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
+    }
+    public void onClick(String thisGood) {
+        Context context = this;
+//        Toast.makeText(context, thisGood, Toast.LENGTH_SHORT)
+//                .show();
+        Intent detailIntent = new Intent(MainActivity.this, DetailActivity.class);
+        detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
+        startActivity(detailIntent);
     }
 
 //    private void loadGoodData() {
