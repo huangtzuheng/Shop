@@ -17,11 +17,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        SharedPreferences remdname=getPreferences(LoginActivity.MODE_PRIVATE);
-        String name_str=remdname.getString("name", "");
-        String pass_str=remdname.getString("pass", "");
-        login_name.setText(name_str);
-        login_password.setText(pass_str);
+//        SharedPreferences remdname=getPreferences(LoginActivity.MODE_PRIVATE);
+//        String name_str=remdname.getString("name", "");
+//        String pass_str=remdname.getString("pass", "");
+//        login_name.setText(name_str);
+//        login_password.setText(pass_str);
     }
 
     public void sendString(View view) {
