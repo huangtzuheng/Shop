@@ -7,25 +7,40 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.view.View.OnClickListener;
 
 import com.example.user.project.R;
 
 public class GoodAdapter extends RecyclerView.Adapter<GoodAdapter.GoodAdapterViewHolder> {
     private String[] mGoodData;
-//    private int mTestNumbers;
+    private final GoodAdapterOnClickHandler mClickHandler;
 
-    public GoodAdapter(String[] mData) {
-        mGoodData = mData;
+    public interface GoodAdapterOnClickHandler {
+        void onClick(String thisGood);
     }
 
-    public class GoodAdapterViewHolder extends RecyclerView.ViewHolder {
+    public GoodAdapter(String[] mData, GoodAdapterOnClickHandler clickHandler) {
+        mGoodData = mData;
+        mClickHandler = clickHandler;
+    }
+
+    public class GoodAdapterViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
         public TextView mGoodTextView;
         public LinearLayout mLinearLayout;
 
         public GoodAdapterViewHolder(View view) {
             super(view);
+
             mGoodTextView = (TextView) view.findViewById(R.id.tv_good_data);
             mLinearLayout = (LinearLayout) view.findViewById(R.id.ll);
+            view.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            int adapterPosition = getAdapterPosition();
+            String thisGood = mGoodData[adapterPosition];
+            mClickHandler.onClick(thisGood);
         }
     }
 
