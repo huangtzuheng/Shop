@@ -12,7 +12,6 @@ import com.example.user.project.Utils.Cart.CartActivity;
 import com.example.user.project.Utils.Home.MainActivity;
 import com.example.user.project.Utils.Notification.NotificationActivity;
 import com.example.user.project.Utils.Profile.ProfileActivity;
-import com.example.user.project.Utils.Search.SearchActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class BottomNavigationViewHelper {
@@ -32,10 +31,6 @@ public class BottomNavigationViewHelper {
                     case R.id.ic_home:
                         Intent intent1 = new Intent(context, MainActivity.class);
                         context.startActivity(intent1);
-                        break;
-                    case R.id.ic_search:
-                        Intent intent2 = new Intent(context, SearchActivity.class);
-                        context.startActivity(intent2);
                         break;
                     case R.id.ic_notification:
                         Intent intent3 = new Intent(context, NotificationActivity.class);

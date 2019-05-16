@@ -1145,6 +1145,7 @@ id ghost_view
 id gone
 id gridImageProgressbar
 id gridImageView
+id gridImageView2
 id gridView
 id group_divider
 id groups
@@ -1154,7 +1155,6 @@ id ic_cart
 id ic_home
 id ic_notification
 id ic_person
-id ic_search
 id icon
 id icon_group
 id ifRoom
@@ -1270,12 +1270,13 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
-id textEditProfile
 id textPrivateInfo
 id textSetting
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView1
+id textView2
 id text_buying
 id text_input_password_toggle
 id text_selling

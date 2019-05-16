@@ -44,7 +44,7 @@ public class ProfileActivity extends AppCompatActivity{
         setupBottomNavigationView();
         setupToolbar();
         setupActivityWidget();
-        setProfileImgae();
+        setProfileImage();
 
         tempGridSetup();
     }
@@ -75,7 +75,7 @@ public class ProfileActivity extends AppCompatActivity{
         GridImageAdapter adapter = new GridImageAdapter(mContext, R.layout.layout_grid_imageview, "", imgURLs);
         gridView.setAdapter(adapter);
     }
-    private void setProfileImgae(){
+    private void setProfileImage(){
         Log.d(TAG, "setProfileImage: setting profile photo. ");
         String imgURL = "www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2016/08/ac-lloyd.jpg?itok=bb72IeLf";
         UniversalImageLoader.setImage(imgURL, profilePhoto, mProgressBar, "https://");
