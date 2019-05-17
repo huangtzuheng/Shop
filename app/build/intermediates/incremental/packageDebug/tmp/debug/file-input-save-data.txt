@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Fri May 10 00:10:50 CST 2019
+#Sat May 18 02:50:43 CST 2019
+1.base=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
 0.path=classes.dex
 0.set=DEX
-count=1
+0.base=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+1.path=classes.dex
