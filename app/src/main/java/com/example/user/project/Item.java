@@ -148,7 +148,7 @@ public class Item {
 
         // 如果有查詢結果
         if (result.moveToFirst()) {
-            // 讀取包裝一筆資料的物件
+            //讀取包裝一筆資料的物件
             item = getRecord(result);
         }
 
