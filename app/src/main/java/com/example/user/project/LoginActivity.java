@@ -23,6 +23,12 @@ public class LoginActivity extends AppCompatActivity {
 //        login_name.setText(name_str);
 //        login_password.setText(pass_str);
     }
+    public void forgetPS(View view){
+        AlertDialog ag = new AlertDialog.Builder(this)
+                .setTitle("密碼提示")
+                .setMessage("4321")
+                .setPositiveButton("OK", null)
+                .show();}
 
     public void sendString(View view) {
 

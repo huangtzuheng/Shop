@@ -16,7 +16,7 @@ public class Login2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_login2);
         TextView showStringTV =(TextView) findViewById(R.id.showString);
         TextView showStringTV2 =(TextView) findViewById(R.id.showString2);
-        showStringTV.setText(outputString);
-        showStringTV2.setText(outputString2);
+        showStringTV.setText(outputString+"您好");
+        showStringTV2.setText("歡迎登入");
     }
 }
