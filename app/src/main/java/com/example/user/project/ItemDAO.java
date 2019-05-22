@@ -5,7 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import android.content.ContentValues;
 import android.database.Cursor;
-
 import java.util.ArrayList;
 import java.util.List;
 
