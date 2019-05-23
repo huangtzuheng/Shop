@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat May 18 03:03:42 CST 2019
+#Thu May 23 02:53:50 CST 2019
 1.base=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
