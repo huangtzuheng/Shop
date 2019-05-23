@@ -3,6 +3,8 @@ package com.example.user.project.Utils.Home;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -30,7 +32,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodAdapterOnClickHandler {
+public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodAdapterOnClickHandler, ViewPager.OnPageChangeListener,
+        TabLayout.OnTabSelectedListener {
     private static final String TAG = "MainActivity";
     private static final int ACTIVITY_NUM = 0;
     private Context mContext = MainActivity.this;
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         setupBottomNavigationView();
         setupViewPager();
         //  made by austin
-        toolbar = (Toolbar) findViewById(R.id.tb_home);
+//        toolbar = (Toolbar) findViewById(R.id.tb_home);
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_good);
         GridLayoutManager layoutManager
                 = new GridLayoutManager(this, 2);
@@ -77,8 +80,27 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
         mViewPager = (ViewPager) findViewById(R.id.container);
 
-//        mViewPager.addOnPageChangeListener(this);
-//        mTabLayout.addOnTabSelectedListener(this);
+        mViewPager.addOnPageChangeListener(this);
+        mTabLayout.addOnTabSelectedListener(this);
+
+        mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                switch (position) {
+                    case 0:
+                        return bid;
+                    case 1:
+                        return ask;
+                }
+                return null;
+            }
+
+            @Override
+            public int getCount() {
+                return 2;
+            }
+        });
+
 
     }
 
@@ -99,6 +121,37 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         Intent detailIntent = new Intent(MainActivity.this, DetailActivity.class);
         detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
         startActivity(detailIntent);
+    }
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+        //TabLayout里的TabItem被选中的时候触发
+        mViewPager.setCurrentItem(tab.getPosition());
+    }
+
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        //viewPager滑动之后显示触发
+        mTabLayout.getTabAt(position).select();
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
     }
 
 }

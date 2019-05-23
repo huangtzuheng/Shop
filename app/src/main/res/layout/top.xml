@@ -2,7 +2,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true">
 
         <android.support.design.widget.AppBarLayout
@@ -18,8 +18,21 @@
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tb_home"
-                android:background="?attr/colorPrimary" />
+                android:background="?attr/colorPrimary">
+
+                <android.support.design.widget.TabItem
+                    android:text="BID"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <android.support.design.widget.TabItem
+                    android:text="ASK"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TabLayout>
 
 
         </android.support.design.widget.AppBarLayout>

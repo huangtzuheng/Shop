@@ -32,12 +32,7 @@
                 android:id="@+id/recyclerview_good"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-            <!--<ProgressBar-->
-            <!--android:id="@+id/pb_loading_indicator"-->
-            <!--android:layout_width="42dp"-->
-            <!--android:layout_height="42dp"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:visibility="invisible"/>-->
+
 
         </RelativeLayout>
 
