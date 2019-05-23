@@ -1209,7 +1209,6 @@ id profile_photo
 id progress_circular
 id progress_horizontal
 id radio
-id recyclerview_good
 id relLayout1
 id relLayout2
 id relLayout3
@@ -1218,6 +1217,8 @@ id relLayout5
 id right
 id right_icon
 id right_side
+id rv_ask
+id rv_bid
 id saveChanges
 id save_image_matrix
 id save_non_transition_alpha
@@ -1375,9 +1376,9 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_ask
+layout fragment_bid
 layout fragment_editprofile
-layout fragment_home
-layout fragment_messages
 layout fragment_signout
 layout good_list
 layout layout_center_accountsetting

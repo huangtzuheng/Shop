@@ -1,6 +1,22 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-v22_values-v22.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\values-v22\\values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-hu_values-hu.arsc.flat",
             "map": [
                 {
@@ -28,22 +44,6 @@
                         "startOffsets": "105,213,318,433,517,629,759,835,911,1002,1095,1191,1285,1386,1479,1574,1669,1760,1851,1934,2044,2155,2255,2366,2474,2593,2775,2878",
                         "endColumns": "107,104,114,83,111,129,75,75,90,92,95,93,100,92,94,94,90,90,82,109,110,99,110,107,118,181,102,82",
                         "endOffsets": "208,313,428,512,624,754,830,906,997,1090,1186,1280,1381,1474,1569,1664,1755,1846,1929,2039,2150,2250,2361,2469,2588,2770,2873,2956"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-v22_values-v22.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
                     }
                 }
             ]
@@ -273,22 +273,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-watch-v21_values-watch-v21.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\values-watch-v21\\values-watch-v21.xml",
-                    "from": {
-                        "startLines": "2,6,10",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,271,499",
-                        "endLines": "5,9,13",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "266,494,724"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-land_values-land.arsc.flat",
             "map": [
                 {
@@ -318,6 +302,22 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\res\\merged\\debug\\values-watch-v21_values-watch-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\austin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\82fb1a747e2c40f8f6a9be88214c6c7d\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
                     }
                 }
             ]

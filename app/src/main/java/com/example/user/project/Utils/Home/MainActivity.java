@@ -22,7 +22,7 @@ import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodAdapterOnClickHandler, ViewPager.OnPageChangeListener,
+public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener,
         TabLayout.OnTabSelectedListener {
     private static final String TAG = "MainActivity";
     private static final int ACTIVITY_NUM = 0;
@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         setupViewPager();
         //  made by austin
 //        toolbar = (Toolbar) findViewById(R.id.tb_home);
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_good);
-        GridLayoutManager layoutManager
-                = new GridLayoutManager(this, 2);
-        mRecyclerView.setLayoutManager(layoutManager);
-        mRecyclerView.setHasFixedSize(true);
-        mGoodAdapter = new GoodAdapter(testData, this);
-        mRecyclerView.setAdapter(mGoodAdapter);
+//        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview_good);
+//        GridLayoutManager layoutManager
+//                = new GridLayoutManager(this, 2);
+//        mRecyclerView.setLayoutManager(layoutManager);
+//        mRecyclerView.setHasFixedSize(true);
+//        mGoodAdapter = new GoodAdapter(testData, this);
+//        mRecyclerView.setAdapter(mGoodAdapter);
 
     }
 
@@ -104,14 +104,14 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         menuItem.setChecked(true);
     }
 
-    public void onClick(String thisGood) {
-//        Context context = this;
-//        Toast.makeText(context, thisGood, Toast.LENGTH_SHORT)
-//                .show();
-        Intent detailIntent = new Intent(MainActivity.this, DetailActivity.class);
-        detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
-        startActivity(detailIntent);
-    }
+//    public void onClick(String thisGood) {
+////        Context context = this;
+////        Toast.makeText(context, thisGood, Toast.LENGTH_SHORT)
+////                .show();
+//        Intent detailIntent = new Intent(MainActivity.this, DetailActivity.class);
+//        detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
+//        startActivity(detailIntent);
+//    }
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         //TabLayout里的TabItem被选中的时候触发
