@@ -33,7 +33,7 @@ public class ItemDAO {
             };
     public static final String[]SHOW_COLUMNS =
             {
-            KEY_ID,DATETIME_COLUMN,DESCRIPTION_COLUMN
+            KEY_ID,DATETIME_COLUMN,DESCRIPTION_COLUMN,PIC1_COLUMN
             };
     // 使用上面宣告的變數建立表格的SQL指令
     public static final String CREATE_TABLE =
