@@ -5,21 +5,14 @@ import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 
 import com.example.user.project.R;
@@ -28,9 +21,6 @@ import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodAdapterOnClickHandler, ViewPager.OnPageChangeListener,
         TabLayout.OnTabSelectedListener {
@@ -43,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
     private Toolbar toolbar;
     private ViewPager mViewPager;
     private TabLayout mTabLayout;
-    private HomeFragment bid = new HomeFragment();
-    private MessagesFragment ask = new MessagesFragment();
+    private BidFragment bid = new BidFragment();
+    private AskFragment ask = new AskFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +64,8 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
 
     private void setupViewPager() {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new HomeFragment());
-        adapter.addFragment(new MessagesFragment());
+        adapter.addFragment(new BidFragment());
+        adapter.addFragment(new AskFragment());
 
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
         mViewPager = (ViewPager) findViewById(R.id.container);

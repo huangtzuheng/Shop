@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.example.user.project.R;
 
-public class HomeFragment extends Fragment {
-    private static final String TAG = "HomeFragment";
+public class BidFragment extends Fragment {
+    private static final String TAG = "BidFragment";
 
     @Nullable
     @Override
