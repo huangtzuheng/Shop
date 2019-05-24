@@ -1,6 +1,8 @@
 package com.example.user.project.Utils.Profile;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.user.project.R;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
@@ -25,7 +28,7 @@ import java.util.ArrayList;
 
 public class ProfileActivity extends AppCompatActivity{
     private static final String TAG = "ProfileActivity";
-    private static final int ACTIVITY_NUM = 4;
+    private static final int ACTIVITY_NUM = 3;
     private static final int NUM_GRID_COLUMS = 3;
 
     private Context mContext = ProfileActivity.this;
@@ -46,15 +49,43 @@ public class ProfileActivity extends AppCompatActivity{
         setupActivityWidget();
         setProfileImgae();
 
-        tempGridSetup();
+
+        // =============== Link Listener ===============
+
+        final TextView tv_buying = (TextView) findViewById(R.id.profile_Btn_Buying);
+        final TextView tv_selling = (TextView) findViewById(R.id.profile_Btn_Selling);
+
+        tv_buying.setOnClickListener(new TextView.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                tv_buying.setTextColor(Color.parseColor("#77a9f9"));
+                tv_selling.setTextColor(Color.parseColor("#666666"));
+                tv_buying.setTypeface(null, Typeface.BOLD);
+                tv_selling.setTypeface(null, Typeface.NORMAL);
+                tempGridSetup();
+            }
+
+        });
+
+        tv_selling.setOnClickListener(new TextView.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                tv_buying.setTextColor(Color.parseColor("#666666"));
+                tv_selling.setTextColor(Color.parseColor("#77a9f9"));
+                tv_buying.setTypeface(null, Typeface.NORMAL);
+                tv_selling.setTypeface(null, Typeface.BOLD);
+                tempGridSetup2();
+            }
+
+        });
+
+
+        // =============== Link Listener ===============
+
+
     }
     private void tempGridSetup(){
         ArrayList<String> imgURLs = new ArrayList<>();
-        imgURLs.add("https://pbs.twimg.com/profile_images/616076655547682816/6gMRtQyY.jpg");
-        imgURLs.add("https://i.redd.it/9bf67ygj710z.jpg");
-        imgURLs.add("https://c1.staticflickr.com/5/4276/34102458063_7be616b993_o.jpg");
-        imgURLs.add("http://i.imgur.com/EwZRpvQ.jpg");
-        imgURLs.add("http://i.imgur.com/JTb2pXP.jpg");
         imgURLs.add("https://i.redd.it/59kjlxxf720z.jpg");
         imgURLs.add("https://i.redd.it/pwduhknig00z.jpg");
         imgURLs.add("https://i.redd.it/clusqsm4oxzy.jpg");
@@ -65,6 +96,18 @@ public class ProfileActivity extends AppCompatActivity{
 
         setupImageGrid(imgURLs);
     }
+    private void tempGridSetup2(){
+        ArrayList<String> imgURLs = new ArrayList<>();
+        imgURLs.add("https://pbs.twimg.com/profile_images/616076655547682816/6gMRtQyY.jpg");
+        imgURLs.add("https://i.redd.it/9bf67ygj710z.jpg");
+        imgURLs.add("https://c1.staticflickr.com/5/4276/34102458063_7be616b993_o.jpg");
+        imgURLs.add("http://i.imgur.com/EwZRpvQ.jpg");
+        imgURLs.add("http://i.imgur.com/JTb2pXP.jpg");
+
+
+        setupImageGrid(imgURLs);
+    }
+
     private void setupImageGrid(ArrayList<String> imgURLs){
         GridView gridView = (GridView) findViewById(R.id.gridView);
 
