@@ -10,5 +10,6 @@
     <color name="white">#FFF</color>
     <color name="black">#000</color>
     <color name="link_blue">#0B0080</color>
+    <color name="link_light_blue">#77a9f9</color>
     <color name="theOrange">#f90</color>
 </resources>
