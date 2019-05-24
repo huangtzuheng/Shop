@@ -16,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.user.project.Item;
 import com.example.user.project.R;
 import com.example.user.project.Utils.Detail.DetailActivity;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
@@ -90,28 +91,28 @@ public class MainActivity extends AppCompatActivity implements GoodAdapter.GoodA
         startActivity(detailIntent);
     }
     private Item item;
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.ac);
 
-        processViews();
-        processControllers();
+//        processViews();
+//        processControllers();
 
         // 建立資料庫物件
-        itemDAO = new ItemDAO(getApplicationContext());
+//        itemDAO = new ItemDAO(getApplicationContext());
 
         // 如果資料庫是空的，就建立一些範例資料
-        // 這是為了方便測試用的，完成應用程式以後可以拿掉
-        if (item.getCount() == 0) {
-            item.sample();
-        }
-
-        // 取得所有記事資料
-        items = itemDAO.getAll();
-
-        itemAdapter = new ItemAdapter(this, R.layout.single_item, items);
-        item_list.setAdapter(itemAdapter);
-    }
+//        // 這是為了方便測試用的，完成應用程式以後可以拿掉
+//        if (item.getCount() == 0) {
+//            item.sample();
+//        }
+//
+//        // 取得所有記事資料
+//        items = itemDAO.getAll();
+//
+//        itemAdapter = new ItemAdapter(this, R.layout.single_item, items);
+//        item_list.setAdapter(itemAdapter);
+//    }
 
 //    private void loadGoodData() {
 //        showGoodDataView();
