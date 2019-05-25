@@ -4,7 +4,7 @@
     <item
         android:id="@+id/size"
         android:orderInCategory="1"
-        android:title="10"
+        android:title="setting"
         app:showAsAction="ifRoom"/>
     <item android:id="@+id/my_search"
         android:title="@string/search_title"

@@ -21,6 +21,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.user.project.Utils.Home.SearchableActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
         <activity android:name="com.example.user.project.Utils.Detail.DetailActivity" />
         <activity android:name="com.example.user.project.Utils.Home.MainActivity" >
             <intent-filter>
@@ -34,6 +52,11 @@
         <activity android:name="com.example.user.project.Utils.Notification.NotificationActivity" />
         <activity android:name="com.example.user.project.Utils.Search.SearchActivity" />
         <activity android:name="com.example.user.project.Utils.Profile.AccountSettingActivity" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.user.project.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
