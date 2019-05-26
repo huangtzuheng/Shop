@@ -57,23 +57,7 @@
                 android:orientation="vertical"
                 android:paddingLeft="20dp">
 
-                <TextView
-                    android:id="@+id/display_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Thanos"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
 
-                <TextView
-                    android:id="@+id/description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Where is my gaunlet?"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
 
             </LinearLayout>
 
