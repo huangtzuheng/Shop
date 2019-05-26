@@ -8,6 +8,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +21,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.user.project.R;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
@@ -41,7 +47,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private TabLayout mTabLayout;
     private BidFragment bid = new BidFragment();
     private AskFragment ask = new AskFragment();
-
+final String[] shoesizetable={"6","6.5","7","7.5",	"8","8.5","9","9.5","10","10.5","12","12.5"};
+private double shoeselectsize;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +60,24 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         setupViewPager();
         //  made by austin
         mToolbar = (Toolbar) findViewById(R.id.tb_home);
+        final Spinner spinner =(Spinner) findViewById(R.id.spinner);
+
+        ArrayAdapter<String> shoe=new ArrayAdapter<>(MainActivity.this,
+                android.R.layout.simple_spinner_dropdown_item,shoesizetable);
+        spinner.setAdapter(shoe);
+     spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this, "您選擇的鞋子尺寸是"+shoesizetable[position]+"(US)", Toast.LENGTH_LONG).show();
+                    shoeselectsize=Double.parseDouble(shoesizetable[position]);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
         SpannableString title = new SpannableString("Foot print");
         int theOrange = Color.parseColor("#ff9900");
@@ -179,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.size_select:
+            case R.id.size:
                 break;
         }
         return super.onOptionsItemSelected(item);
