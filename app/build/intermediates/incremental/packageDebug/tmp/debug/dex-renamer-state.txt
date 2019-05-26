@@ -1,4 +1,4 @@
-#Sun May 26 16:54:10 CST 2019
+#Sun May 26 17:25:04 CST 2019
 base.0=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex
