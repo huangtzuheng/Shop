@@ -613,6 +613,7 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color darkGray
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -637,7 +638,10 @@ color foreground_material_light
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightGray
+color lighterGray
 color link_blue
+color link_light_blue
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -698,6 +702,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color theOrange
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -1003,6 +1008,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable black_border
+drawable border_top_and_bottom
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1095,9 +1101,9 @@ id beginning
 id blocking
 id bottom
 id bottomNavViewBar
+id bt_detail
 id btn_login
 id buttonPanel
-id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1143,6 +1149,7 @@ id fixed
 id forever
 id ghost_view
 id gone
+id good_cardView
 id gridImageProgressbar
 id gridImageView
 id gridView
@@ -1154,7 +1161,6 @@ id ic_cart
 id ic_home
 id ic_notification
 id ic_person
-id ic_search
 id icon
 id icon_group
 id ifRoom
@@ -1166,6 +1172,9 @@ id input_password
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_cartList
+id iv_detail
+id iv_goodList
 id labeled
 id largeLabel
 id left
@@ -1185,6 +1194,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id my_search
 id navigation_header_container
 id never
 id none
@@ -1205,6 +1215,8 @@ id profileMenu
 id profileName
 id profileProgressBar
 id profileToolBar
+id profile_Btn_Buying
+id profile_Btn_Selling
 id profile_photo
 id progress_circular
 id progress_horizontal
@@ -1217,8 +1229,10 @@ id relLayout5
 id right
 id right_icon
 id right_side
+id rl_cartList
 id rv_ask
 id rv_bid
+id rv_cart
 id saveChanges
 id save_image_matrix
 id save_non_transition_alpha
@@ -1238,6 +1252,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_tv
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -1247,6 +1262,7 @@ id showHome
 id showString
 id showString2
 id showTitle
+id size_select
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1272,7 +1288,6 @@ id tag_unhandled_key_listeners
 id tb_home
 id text
 id text2
-id textEditProfile
 id textPrivateInfo
 id textSetting
 id textSpacerNoButtons
@@ -1296,7 +1311,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tv_detail
+id tv_cartList
+id tv_goodTitle
 id tv_good_data
 id uniform
 id unlabeled
@@ -1356,12 +1372,16 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accountsettings
+layout activity_cart
 layout activity_detail
 layout activity_home
 layout activity_login
 layout activity_login2
+layout activity_notification
 layout activity_profile
+layout activity_searchable
 layout bottom
+layout cart_list
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1382,6 +1402,8 @@ layout fragment_editprofile
 layout fragment_signout
 layout good_list
 layout layout_center_accountsetting
+layout layout_center_cart
+layout layout_center_notification
 layout layout_center_profile
 layout layout_center_viewpager
 layout layout_grid_imageview
@@ -1399,12 +1421,15 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout snippet_center_editprofile
 layout snippet_top_accountsettingtoolbar
+layout snippet_top_cartbar
 layout snippet_top_editprofiletoolbar
+layout snippet_top_notificationbar
 layout snippet_top_profile
 layout snippet_top_profilebar
 layout support_simple_spinner_dropdown_item
 layout top
 menu bottom_navigation_menu
+menu toolbar_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1465,6 +1490,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string ps
 string search_menu_title
+string search_title
 string sign_out_fragment
 string status_bar_notification_info_overflow
 string userID
@@ -1475,6 +1501,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_ActionBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2042,3 +2069,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml searchable

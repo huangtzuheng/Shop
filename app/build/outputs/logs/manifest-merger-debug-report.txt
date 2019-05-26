@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\BottomNavigationViewEx-2.0.4.aar\cb094c1243057cec4e114f32ffab6414\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2d72d8f1cfb29f37da889b46e1f2e751\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\82fb1a747e2c40f8f6a9be88214c6c7d\AndroidManifest.xml:17:1-22:12
@@ -37,20 +37,20 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\austin\.gradle\ca
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ee50750ff55edf66255927081e59cd5c\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\278de9d6ae30f7427267eadee717c21f\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\3126d32da8632e7fb186e8b9c4a7e516\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:2:11-69
@@ -63,7 +63,7 @@ ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:8:5-28:19
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:8:5-48:19
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\BottomNavigationViewEx-2.0.4.aar\cb094c1243057cec4e114f32ffab6414\AndroidManifest.xml:11:5-12:19
 MERGED from [com.github.ittianyu:BottomNavigationViewEx:2.0.4] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\BottomNavigationViewEx-2.0.4.aar\cb094c1243057cec4e114f32ffab6414\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\austin\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2d72d8f1cfb29f37da889b46e1f2e751\AndroidManifest.xml:22:5-20
@@ -90,44 +90,72 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\austin\.gr
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.user.project.Utils.Home.SearchableActivity
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:9-30:20
+	android:launchMode
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:17:13-43
+	android:theme
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:18:13-57
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:16:13-58
+intent-filter#action:name:android.intent.action.SEARCH
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:19:13-21:29
+action#android.intent.action.SEARCH
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:17-71
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:25-68
+intent-filter#action:name:android.intent.action.VIEW
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:22:13-24:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:25-66
+meta-data#android.app.searchable
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:26:13-28:54
+	android:resource
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:28:17-51
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:27:17-54
+meta-data#android.app.default_searchable
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:31:9-33:51
+	android:value
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:33:13-48
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:32:13-58
 activity#com.example.user.project.Utils.Detail.DetailActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:9-74
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:35:9-65
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:19-62
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:35:19-62
 activity#com.example.user.project.Utils.Home.MainActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:16:19-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:40:27-74
 activity#com.example.user.project.Utils.Cart.CartActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:9-61
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:43:9-61
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:19-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:43:19-58
 activity#com.example.user.project.Utils.Profile.ProfileActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:24:9-67
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:9-67
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:24:19-64
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:19-64
 activity#com.example.user.project.Utils.Notification.NotificationActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:25:9-77
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:9-77
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:25:19-74
-activity#com.example.user.project.Utils.Search.SearchActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:26:9-65
-	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:26:19-62
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:19-74
 activity#com.example.user.project.Utils.Profile.AccountSettingActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:27:9-74
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:9-74
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:27:19-71
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:19-71
 uses-sdk
 INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml
