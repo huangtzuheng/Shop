@@ -15,7 +15,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        mGoodDetail = (TextView) findViewById(R.id.tv_detail);
+        mGoodDetail = (TextView) findViewById(R.id.tv_goodTitle);
 
         Intent intentThatStartedThisActivity = getIntent();
         if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_view"
+    android:id="@+id/good_cardView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="300dp"
     android:layout_margin="3dp"
     android:padding="6dp"
     app:cardElevation="6dp"
@@ -14,11 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_goodList"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
 
         <TextView
+            android:layout_below="@id/iv_goodList"
             android:id="@+id/tv_good_data"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:background="@color/black"
             android:textColor="@color/theOrange"/>
     </LinearLayout>

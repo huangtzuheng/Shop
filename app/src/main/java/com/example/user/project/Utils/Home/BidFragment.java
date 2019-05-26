@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.user.project.R;
 import com.example.user.project.Utils.Detail.DetailActivity;
@@ -18,6 +19,7 @@ public class BidFragment extends Fragment implements GoodAdapter.GoodAdapterOnCl
     public String[] testDataA = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"};
     private RecyclerView mRecyclerView;
     private GoodAdapter mGoodAdapter;
+//    private Button mButton;
 
     @Nullable
     @Override
@@ -30,11 +32,13 @@ public class BidFragment extends Fragment implements GoodAdapter.GoodAdapterOnCl
         mRecyclerView.setHasFixedSize(true);
         mGoodAdapter = new GoodAdapter(testDataA, this);
         mRecyclerView.setAdapter(mGoodAdapter);
+//        mButton = (Button) view.findViewById(R.id.bt_detail);
         return  view;
     }
     public void onClick(String thisGood) {
         Intent detailIntent = new Intent(getActivity(), DetailActivity.class);
         detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
+//        mButton.setText("Add to Cart");
         startActivity(detailIntent);
     }
 }

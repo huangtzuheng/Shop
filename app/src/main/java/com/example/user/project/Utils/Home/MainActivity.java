@@ -10,7 +10,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.text.SpannableString;
@@ -19,12 +18,10 @@ import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 
 import com.example.user.project.R;
-import com.example.user.project.Utils.Detail.DetailActivity;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -148,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.size_select, menu);
+        getMenuInflater().inflate(R.menu.toolbar_item, menu);
         MenuItem menuSearchItem = menu.findItem(R.id.my_search);
 
         // Get the SearchView and set the searchable configuration
@@ -160,15 +157,33 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
         // 這邊讓icon可以還原到搜尋的icon
         searchView.setIconifiedByDefault(true);
+        // 按下確認開啟新的activity
+//        final SearchView.OnQueryTextListener queryTextListener = new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                Intent intent = new Intent(getApplicationContext(), SearchableActivity.class);
+//                startActivity(intent);
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//
+//                return true;
+//
+//            }
+//        };
+//        searchView.setOnQueryTextListener(queryTextListener);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.size:
+            case R.id.size_select:
                 break;
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }
