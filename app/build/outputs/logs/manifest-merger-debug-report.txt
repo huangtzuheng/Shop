@@ -90,72 +90,76 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\austin\.gr
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.user.project.Utils.Detail.CartDetailActivity
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:9-78
+	android:name
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:19-66
 activity#com.example.user.project.Utils.Home.SearchableActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:15:9-30:20
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:16:9-30:20
 	android:launchMode
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:17:13-43
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:18:13-43
 	android:theme
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:18:13-57
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:19:13-57
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:16:13-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:17:13-58
 intent-filter#action:name:android.intent.action.SEARCH
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:19:13-21:29
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:13-22:29
 action#android.intent.action.SEARCH
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:17-71
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:21:17-71
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:20:25-68
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:21:25-68
 intent-filter#action:name:android.intent.action.VIEW
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:22:13-24:29
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:13-25:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:24:25-66
 meta-data#android.app.searchable
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:26:13-28:54
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:27:13-29:54
 	android:resource
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:28:17-51
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:29:17-51
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:27:17-54
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:28:17-54
 meta-data#android.app.default_searchable
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:31:9-33:51
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:32:9-34:51
 	android:value
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:33:13-48
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:34:13-48
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:32:13-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:33:13-58
 activity#com.example.user.project.Utils.Detail.DetailActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:35:9-65
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:9-65
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:35:19-62
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:19-62
 activity#com.example.user.project.Utils.Home.MainActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:9-42:20
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:37:9-43:20
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:36:19-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:37:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:37:13-41:29
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.example.user.project.Utils.Cart.CartActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:43:9-61
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:9-61
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:43:19-58
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:19-58
 activity#com.example.user.project.Utils.Profile.ProfileActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:9-67
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:9-67
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:44:19-64
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:19-64
 activity#com.example.user.project.Utils.Notification.NotificationActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:9-77
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:9-77
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:45:19-74
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:19-74
 activity#com.example.user.project.Utils.Profile.AccountSettingActivity
-ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:9-74
+ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:47:9-74
 	android:name
-		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:46:19-71
+		ADDED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml:47:19-71
 uses-sdk
 INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\austin\Documents\GitHub\Shop\app\src\main\AndroidManifest.xml

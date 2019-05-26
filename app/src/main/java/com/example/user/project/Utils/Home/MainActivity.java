@@ -206,8 +206,8 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.size:
-                break;
+
+
         }
         return super.onOptionsItemSelected(item);
     }
