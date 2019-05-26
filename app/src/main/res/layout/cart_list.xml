@@ -9,8 +9,13 @@
         android:id="@+id/rl_cartList"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_cartList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
         <ImageView
             android:id="@+id/iv_cartList"
+            android:layout_toRightOf="@+id/cb_cartList"
             android:layout_width="100dp"
             android:layout_height="100dp" />
         <TextView

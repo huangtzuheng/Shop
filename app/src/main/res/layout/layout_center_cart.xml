@@ -34,7 +34,7 @@
             android:gravity="center_vertical"
             android:orientation="horizontal" >
             <CheckBox
-                android:id="@+id/all_chekbox"
+                android:id="@+id/all_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -61,25 +61,25 @@
                 android:textStyle="bold" />
         </LinearLayout>
         <Button
-            android:id="@+id/tv_delete"
+            android:id="@+id/bt_delete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#FFBB00"
+            android:background="@color/theOrange"
             android:clickable="true"
             android:gravity="center"
             android:text="刪除"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/black" />
         <Button
-            android:id="@+id/tv_go_to_pay"
+            android:id="@+id/bt_go_to_pay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#000000"
+            android:background="@color/black"
             android:clickable="true"
             android:gravity="center"
             android:text="付款(0)"
-            android:textColor="#FAFAFA" />
+            android:textColor="@color/white" />
 
 </LinearLayout>
     </LinearLayout>

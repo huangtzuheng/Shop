@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.user.project.R;
+import com.example.user.project.Utils.Detail.CartDetailActivity;
 import com.example.user.project.Utils.Detail.DetailActivity;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -52,7 +53,7 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.CartA
         menuItem.setChecked(true);
     }
     public void onClick(String thisGood) {
-        Intent detailIntent = new Intent(this, DetailActivity.class);
+        Intent detailIntent = new Intent(this, CartDetailActivity.class);
         detailIntent.putExtra(Intent.EXTRA_TEXT, thisGood);
 //        mButton.setText("Remove from Cart");
         startActivity(detailIntent);

@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Utils.Detail.CartDetailActivity"></activity>
         <activity
             android:name=".Utils.Home.SearchableActivity"
             android:launchMode="singleTop"
@@ -26,8 +27,8 @@
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
-
         </activity>
+
         <meta-data
             android:name="android.app.default_searchable"
             android:value=".SearchableActivity" />
@@ -44,7 +45,6 @@
         <activity android:name=".Utils.Profile.ProfileActivity" />
         <activity android:name=".Utils.Notification.NotificationActivity" />
         <activity android:name=".Utils.Profile.AccountSettingActivity" />
-
     </application>
 
 </manifest>
