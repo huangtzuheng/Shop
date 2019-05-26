@@ -41,14 +41,15 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private RecyclerView mRecyclerView;
     private GoodAdapter mGoodAdapter;
     public String[] testData = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"};
-//    private SpannableString title;
+    //    private SpannableString title;
     private Toolbar mToolbar;
     private ViewPager mViewPager;
     private TabLayout mTabLayout;
     private BidFragment bid = new BidFragment();
     private AskFragment ask = new AskFragment();
-final String[] shoesizetable={"6","6.5","7","7.5",	"8","8.5","9","9.5","10","10.5","12","12.5"};
-private double shoeselectsize;
+    final String[] shoesizetable = {"6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "12", "12.5"};
+    private double shoeselectsize;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,16 +61,16 @@ private double shoeselectsize;
         setupViewPager();
         //  made by austin
         mToolbar = (Toolbar) findViewById(R.id.tb_home);
-        final Spinner spinner =(Spinner) findViewById(R.id.spinner);
+        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
-        ArrayAdapter<String> shoe=new ArrayAdapter<>(MainActivity.this,
-                android.R.layout.simple_spinner_dropdown_item,shoesizetable);
+        ArrayAdapter<String> shoe = new ArrayAdapter<>(MainActivity.this,
+                android.R.layout.simple_spinner_dropdown_item, shoesizetable);
         spinner.setAdapter(shoe);
-     spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "您選擇的鞋子尺寸是"+shoesizetable[position]+"(US)", Toast.LENGTH_LONG).show();
-                    shoeselectsize=Double.parseDouble(shoesizetable[position]);
+                Toast.makeText(MainActivity.this, "您選擇的鞋子尺寸是" + shoesizetable[position] + "(US)", Toast.LENGTH_LONG).show();
+                shoeselectsize = Double.parseDouble(shoesizetable[position]);
             }
 
             @Override
@@ -81,8 +82,8 @@ private double shoeselectsize;
 
         SpannableString title = new SpannableString("Foot print");
         int theOrange = Color.parseColor("#ff9900");
-        title.setSpan(new BackgroundColorSpan(theOrange),5,10, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        title.setSpan(new ForegroundColorSpan(Color.WHITE),0,4, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        title.setSpan(new BackgroundColorSpan(theOrange), 5, 10, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        title.setSpan(new ForegroundColorSpan(Color.WHITE), 0, 4, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
         mToolbar.setTitle(title);
         setSupportActionBar(mToolbar);
 
@@ -201,6 +202,7 @@ private double shoeselectsize;
 //        searchView.setOnQueryTextListener(queryTextListener);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
