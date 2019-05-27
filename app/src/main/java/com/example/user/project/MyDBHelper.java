@@ -31,10 +31,11 @@ public class MyDBHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void onCreate(SQLiteDatabase db)
+    {
         //建立db的Table與Table裡的欄位項目
         String TABLE = "CREATE TABLE " + "sqldb" + " ("
-                + "_id" + " INTEGER primary key autoincrement, "
+                + "_id"  + " INTEGER primary key autoincrement, "
                 + "COLOR" + " text , "
                 + "TITLE" + " text , "
                 + "PRICE" + " text , "
@@ -42,12 +43,11 @@ public class MyDBHelper extends SQLiteOpenHelper {
                 + "DESCRIPTION" + " text, "
                 + "PIC" + " text , "
                 + "PIC2" + " text , "
-                + "PIC3" + " text , " + ");";
+                + "PIC3" + " text  )";
 
 
         db.execSQL(TABLE);
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // 刪除原有的表格
@@ -55,14 +55,14 @@ public class MyDBHelper extends SQLiteOpenHelper {
         // 呼叫onCreate建立新版的表格
         onCreate(db);
     }
-
-    public Cursor select() {
+    public Cursor select()
+    {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query("sqldb", null, null, null, null, null, null);
         return cursor;
     }
-
-    public long insert(String DATETIME, String COLOR, String TITLE, String PRICE, String SIZE, String DESCRIPTION, String PIC1, String PIC2, String PIC3) {
+    public long insert(String DATETIME, String COLOR, String TITLE, String PRICE, String SIZE, String DESCRIPTION, String PIC1, String PIC2, String PIC3)
+    {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put("DATETIME", DATETIME);
@@ -77,17 +77,19 @@ public class MyDBHelper extends SQLiteOpenHelper {
         long row = db.insert("sqldb", null, cv);
         return row;
     }
-
     //刪除Table單筆資料，帶入id
-    public void delete(int id) {
+    public void delete(int id)
+    {
         SQLiteDatabase db = this.getWritableDatabase();
-        String where = "_id" + " = " + Integer.toString(id);
+        String where = "_id" + " = " + Integer.toString(id) ;
         db.delete("sqldb", where, null);
     }
 
     //刪除Table全部資料
-    public void deleteAll() {
+    public void deleteAll()
+    {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.execSQL("DELETE FROM " + " sqldb");
+        db.execSQL("DELETE FROM " + " sqldb" );
     }
 }
+

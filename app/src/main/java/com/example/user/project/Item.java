@@ -1,20 +1,5 @@
 package com.example.user.project;
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
-import android.database.sqlite.SQLiteOpenHelper;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-// 資料功能類別
 public class Item {
     private  long id;
     private String DATETIME;
