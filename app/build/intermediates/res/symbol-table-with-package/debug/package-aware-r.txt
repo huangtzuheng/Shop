@@ -703,6 +703,7 @@ color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color theOrange
+color theOrange_light
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -1009,6 +1010,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable black_border
 drawable border_top_and_bottom
+drawable border_top_and_bottom_no_background
+drawable d
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1041,6 +1044,7 @@ drawable ic_person
 drawable ic_phone
 drawable ic_search
 drawable ic_username
+drawable logo
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1070,6 +1074,7 @@ id META
 id SHIFT
 id SYM
 id Selling
+id aProfileItem
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1103,6 +1108,8 @@ id bottom
 id bottomNavViewBar
 id bt_detail
 id btn_login
+id bu_ask
+id bu_bid
 id buttonPanel
 id center
 id center_horizontal
@@ -1149,6 +1156,14 @@ id fixed
 id forever
 id ghost_view
 id gone
+id goodInfo_pic
+id goodInfo_price
+id goodInfo_seller_description
+id goodInfo_seller_name
+id goodInfo_seller_phone
+id goodInfo_seller_score
+id goodInfo_size
+id goodInfo_title
 id good_cardView
 id gridImageProgressbar
 id gridImageView
@@ -1173,7 +1188,6 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id iv_cartList
-id iv_detail
 id iv_goodList
 id labeled
 id largeLabel
@@ -1217,7 +1231,10 @@ id profileProgressBar
 id profileToolBar
 id profile_Btn_Buying
 id profile_Btn_Selling
+id profile_grid_id
+id profile_phone
 id profile_photo
+id profile_seller_score
 id progress_circular
 id progress_horizontal
 id radio
@@ -1262,13 +1279,14 @@ id showHome
 id showString
 id showString2
 id showTitle
-id size_select
+id size
 id smallLabel
 id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner
 id split_action_bar
 id spread
 id spread_inside
@@ -1312,8 +1330,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_cartList
-id tv_goodTitle
-id tv_good_data
+id tv_good_description
+id tv_good_price
+id tv_good_seller
+id tv_good_size
+id tv_good_title
 id uniform
 id unlabeled
 id up
@@ -1432,6 +1453,7 @@ menu bottom_navigation_menu
 menu toolbar_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Log_In
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

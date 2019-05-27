@@ -3,7 +3,9 @@ package com.example.user.project.Utils.Home;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -25,14 +27,21 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.user.project.ItemDAO;
+import com.example.user.project.UserDAO;
 import com.example.user.project.Item;
+import com.squareup.picasso.Picasso;
+
 import com.example.user.project.R;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener,
         TabLayout.OnTabSelectedListener {
@@ -48,13 +57,41 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private TabLayout mTabLayout;
     private BidFragment bid = new BidFragment();
     private AskFragment ask = new AskFragment();
-final String[] shoesizetable={"6","6.5","7","7.5",	"8","8.5","9","9.5","10","10.5","12","12.5"};
+final String[] shoesizetable={"6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","12","12.5"};
 private double shoeselectsize;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Log.d(TAG, "onCreate: starting.");
+
+
+        //====== Initial Database =========
+
+        ItemDAO test=new ItemDAO(MainActivity.this);
+        UserDAO testU = new UserDAO(MainActivity.this);
+        // 如果資料庫是空的，就建立一些範例資料
+        // 這是為了方便測試用的，完成應用程式以後可以拿掉
+        if (test.getCount() == 0) {
+            test.sample();
+            test.insert(new Item(0,"玩家5號",2500, 45, "我是 玩家5號 的說明文字","https://upload.cc/i1/2019/05/26/Abv3up.jpg",3));
+
+        }
+        if (testU.getCount() == 0) {
+            testU.sample();
+        }
+
+        test.update(new Item(5,"玩家0號",2500, 45, "我是 玩家5號 的說明文字","https://upload.cc/i1/2019/05/26/Abv3up.jpg",3));
+
+        test.close();
+
+        //====== Initial Database =========
+
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        prefs.edit().putLong("UserID", 3)
+                .apply();
+
 
         initImageLoader();
         setupBottomNavigationView();
@@ -69,7 +106,7 @@ private double shoeselectsize;
      spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "您選擇的鞋子尺寸是"+shoesizetable[position]+"(US)", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "您選擇的鞋子尺寸是"+shoesizetable[position]+"(US)", Toast.LENGTH_LONG).show();
                     shoeselectsize=Double.parseDouble(shoesizetable[position]);
             }
 
@@ -152,29 +189,6 @@ private double shoeselectsize;
     public void onTabReselected(TabLayout.Tab tab) {
 
     }
-    private Item item;
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.ac);
-
-//        processViews();
-//        processControllers();
-
-        // 建立資料庫物件
-//        itemDAO = new ItemDAO(getApplicationContext());
-
-        // 如果資料庫是空的，就建立一些範例資料
-//        // 這是為了方便測試用的，完成應用程式以後可以拿掉
-//        if (item.getCount() == 0) {
-//            item.sample();
-//        }
-//
-//        // 取得所有記事資料
-//        items = itemDAO.getAll();
-//
-//        itemAdapter = new ItemAdapter(this, R.layout.single_item, items);
-//        item_list.setAdapter(itemAdapter);
-//    }
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -228,8 +242,8 @@ private double shoeselectsize;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-
-
+            case R.id.size:
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

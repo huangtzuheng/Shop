@@ -1,10 +1,12 @@
 package com.example.user.project.Utils.Profile;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -18,13 +20,19 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.user.project.Item;
+import com.example.user.project.ItemDAO;
 import com.example.user.project.R;
+import com.example.user.project.User;
+import com.example.user.project.UserDAO;
 import com.example.user.project.Utils.Utils.BottomNavigationViewHelper;
 import com.example.user.project.Utils.Utils.GridImageAdapter;
 import com.example.user.project.Utils.Utils.UniversalImageLoader;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ProfileActivity extends AppCompatActivity{
     private static final String TAG = "ProfileActivity";
@@ -34,26 +42,64 @@ public class ProfileActivity extends AppCompatActivity{
     private Context mContext = ProfileActivity.this;
 
     private ProgressBar mProgressBar;
+    private TextView UserName, UserScore, UserPhone;
     private ImageView profilePhoto;
+    private User theUser;
+
+
+    //========= 這應該要登入後存SharedPreferences =========
+
+    public static long login_USER_ID;
+
+    //========= 這應該要登入後存SharedPreferences =========
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Log.d(TAG,"onCreate: started.");
+
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        login_USER_ID = prefs.getLong("UserID", 0);
+
+
         mProgressBar = (ProgressBar) findViewById(R.id.profileProgressBar);
+        UserName = (TextView) findViewById(R.id.display_name);
+        UserScore = (TextView) findViewById(R.id.profile_seller_score);
+        UserPhone = (TextView) findViewById(R.id.profile_phone);
         mProgressBar.setVisibility(View.GONE);
+
+        theUser = new UserDAO(this).get(login_USER_ID);
 
         setupBottomNavigationView();
         setupToolbar();
         setupActivityWidget();
         setProfileImgae();
+        UserName.setText(theUser.getName());
+        UserPhone.setText(theUser.getPhone());
+        UserScore.setText(String.valueOf(theUser.getScore()));
+
+        getMySellingData();
 
 
         // =============== Link Listener ===============
 
         final TextView tv_buying = (TextView) findViewById(R.id.profile_Btn_Buying);
         final TextView tv_selling = (TextView) findViewById(R.id.profile_Btn_Selling);
+
+
+        tv_selling.setOnClickListener(new TextView.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                tv_buying.setTextColor(Color.parseColor("#666666"));
+                tv_selling.setTextColor(Color.parseColor("#77a9f9"));
+                tv_buying.setTypeface(null, Typeface.NORMAL);
+                tv_selling.setTypeface(null, Typeface.BOLD);
+                getMySellingData();
+            }
+
+        });
 
         tv_buying.setOnClickListener(new TextView.OnClickListener(){
             @Override
@@ -67,48 +113,40 @@ public class ProfileActivity extends AppCompatActivity{
 
         });
 
-        tv_selling.setOnClickListener(new TextView.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                tv_buying.setTextColor(Color.parseColor("#666666"));
-                tv_selling.setTextColor(Color.parseColor("#77a9f9"));
-                tv_buying.setTypeface(null, Typeface.NORMAL);
-                tv_selling.setTypeface(null, Typeface.BOLD);
-                tempGridSetup2();
-            }
-
-        });
-
 
         // =============== Link Listener ===============
 
 
     }
+
+
+    public void getMySellingData(){
+        List<Item> mySellingGood = new ItemDAO(this).getByUID(login_USER_ID);
+
+        ArrayList<Item> items = new ArrayList<>();
+        for(Item theGood : mySellingGood ){
+            items.add(theGood);
+        }
+
+        setupImageGrid(items);
+    }
+
     private void tempGridSetup(){
-        ArrayList<String> imgURLs = new ArrayList<>();
-        imgURLs.add("https://i.redd.it/59kjlxxf720z.jpg");
-        imgURLs.add("https://i.redd.it/pwduhknig00z.jpg");
-        imgURLs.add("https://i.redd.it/clusqsm4oxzy.jpg");
-        imgURLs.add("https://i.redd.it/svqvn7xs420z.jpg");
-        imgURLs.add("http://i.imgur.com/j4AfH6P.jpg");
-        imgURLs.add("https://i.redd.it/89cjkojkl10z.jpg");
-        imgURLs.add("https://i.redd.it/aw7pv8jq4zzy.jpg");
+//        ArrayList<String> imgURLs = new ArrayList<>();
+//        imgURLs.add("https://i.redd.it/59kjlxxf720z.jpg");
+//        imgURLs.add("https://i.redd.it/pwduhknig00z.jpg");
+//        imgURLs.add("https://i.redd.it/clusqsm4oxzy.jpg");
+//        imgURLs.add("https://i.redd.it/svqvn7xs420z.jpg");
+//        imgURLs.add("http://i.imgur.com/j4AfH6P.jpg");
+//        imgURLs.add("https://i.redd.it/89cjkojkl10z.jpg");
+//        imgURLs.add("https://i.redd.it/aw7pv8jq4zzy.jpg");
 
-        setupImageGrid(imgURLs);
-    }
-    private void tempGridSetup2(){
-        ArrayList<String> imgURLs = new ArrayList<>();
-        imgURLs.add("https://pbs.twimg.com/profile_images/616076655547682816/6gMRtQyY.jpg");
-        imgURLs.add("https://i.redd.it/9bf67ygj710z.jpg");
-        imgURLs.add("https://c1.staticflickr.com/5/4276/34102458063_7be616b993_o.jpg");
-        imgURLs.add("http://i.imgur.com/EwZRpvQ.jpg");
-        imgURLs.add("http://i.imgur.com/JTb2pXP.jpg");
-
-
-        setupImageGrid(imgURLs);
+        ArrayList<Item> items = new ArrayList<>();
+        setupImageGrid(items);
     }
 
-    private void setupImageGrid(ArrayList<String> imgURLs){
+
+    private void setupImageGrid(ArrayList<Item> imgURLs){
         GridView gridView = (GridView) findViewById(R.id.gridView);
 
         int gridWidth = getResources().getDisplayMetrics().widthPixels;
@@ -119,10 +157,14 @@ public class ProfileActivity extends AppCompatActivity{
         gridView.setAdapter(adapter);
     }
     private void setProfileImgae(){
-        Log.d(TAG, "setProfileImage: setting profile photo. ");
-        String imgURL = "www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2016/08/ac-lloyd.jpg?itok=bb72IeLf";
-        UniversalImageLoader.setImage(imgURL, profilePhoto, mProgressBar, "https://");
+//        Log.d(TAG, "setProfileImage: setting profile photo. ");
+//        String imgURL = "www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2016/08/ac-lloyd.jpg?itok=bb72IeLf";
+//        UniversalImageLoader.setImage(imgURL, profilePhoto, mProgressBar, "https://");
+        Picasso.get().load(theUser.getPicture()).fit().into(profilePhoto);
+
     }
+
+
     private void setupActivityWidget(){
         mProgressBar = (ProgressBar) findViewById(R.id.profileProgressBar);
         mProgressBar.setVisibility(View.GONE);

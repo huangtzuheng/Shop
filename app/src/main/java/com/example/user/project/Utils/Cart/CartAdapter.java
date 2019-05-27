@@ -5,8 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import com.example.user.project.R;
 
@@ -26,12 +29,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartAdapterVie
     public class CartAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView mGoodTextView;
         public RelativeLayout mRelativeLayout;
+        public ImageView mimageView;
 
         public CartAdapterViewHolder(View view) {
             super(view);
 
             mGoodTextView = (TextView) view.findViewById(R.id.tv_cartList);
             mRelativeLayout = (RelativeLayout) view.findViewById(R.id.rl_cartList);
+            mimageView = (ImageView) view.findViewById(R.id.iv_cartList);
             view.setOnClickListener(this);
         }
 

@@ -1,4 +1,7 @@
-#Fri May 24 20:35:00 CST 2019
-base.0=C\:\\Users\\User\\Desktop\\NEW\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Mon May 27 20:54:55 CST 2019
+base.0=C\:\\Users\\User\\Desktop\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=C\:\\Users\\User\\Desktop\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

@@ -47,6 +47,13 @@
                         android:gravity="center"
                         android:text="Buying" />
 
+                    <Button
+                        android:id="@+id/bu_bid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="BID" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -71,10 +78,17 @@
                         android:gravity="center"
                         android:text="Selling"/>
 
+                    <Button
+                        android:id="@+id/bu_ask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ASK" />
+
                 </LinearLayout>
 
-
             </LinearLayout>
+
         </LinearLayout>
 
 
