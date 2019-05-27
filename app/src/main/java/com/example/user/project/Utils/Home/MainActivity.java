@@ -242,8 +242,7 @@ private double shoeselectsize;
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.size:
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
