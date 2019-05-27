@@ -1,7 +1,4 @@
-#Sun May 26 16:54:10 CST 2019
-base.0=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
-path.1=classes.dex
-renamed.1=classes2.dex
+#Fri May 24 20:35:00 CST 2019
+base.0=C\:\\Users\\User\\Desktop\\NEW\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\austin\\Documents\\GitHub\\Shop\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out

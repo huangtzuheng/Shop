@@ -7,25 +7,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/relLayout1">
+        android:layout_height="match_parent">
         <include layout="@layout/layout_center_notification"/>
         <include layout="@layout/bottom"/>
-
-        <fr.castorflex.android.circularprogressbar.CircularProgressBar
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:indeterminate="true"
-            app:cpb_color="#FF9900"
-            app:cpb_max_sweep_angle="300"
-            app:cpb_min_sweep_angle="10"
-            app:cpb_rotation_speed="1.0"
-            app:cpb_stroke_width="4dp"
-            app:cpb_sweep_speed="1.0"
-            android:layout_centerInParent="true"
-            />
-
+        <ProgressBar
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/profileProgressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>
