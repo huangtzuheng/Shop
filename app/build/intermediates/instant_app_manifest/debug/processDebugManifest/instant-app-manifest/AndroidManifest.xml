@@ -22,6 +22,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.user.project.Utils.Detail.NotificationDetailActivity" />
         <activity android:name="com.example.user.project.Utils.Detail.CartDetailActivity" />
         <activity
             android:name="com.example.user.project.Utils.Home.SearchableActivity"
