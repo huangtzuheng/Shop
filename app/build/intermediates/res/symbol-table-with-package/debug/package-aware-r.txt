@@ -1019,6 +1019,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable black_border
 drawable border_top_and_bottom
+drawable border_top_and_bottom_no_background
+drawable d
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1051,6 +1053,7 @@ drawable ic_person
 drawable ic_phone
 drawable ic_search
 drawable ic_username
+drawable logo
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1511,6 +1514,7 @@ string fab_transformation_sheet_behavior
 string forgetPS
 string hide_bottom_view_on_scroll_behavior
 string lg
+string log_out_fragment
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
@@ -1520,7 +1524,6 @@ string path_password_strike_through
 string ps
 string search_menu_title
 string search_title
-string sign_out_fragment
 string status_bar_notification_info_overflow
 string userID
 style AlertDialog_AppCompat
