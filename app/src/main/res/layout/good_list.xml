@@ -19,13 +19,110 @@
             android:layout_width="match_parent"
             android:layout_height="170dp" />
 
-        <TextView
-            android:layout_below="@id/iv_goodList"
-            android:id="@+id/tv_good_data"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/black"
-            android:textColor="@color/theOrange"/>
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/black">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_good_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="商品名稱"
+                    android:textStyle="bold"
+                    android:textColor="@color/theOrange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="("
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/theOrange" />
+
+                <TextView
+                    android:id="@+id/tv_good_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="張家齊"
+                    android:textColor="@color/theOrange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/theOrange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NT."
+                    android:layout_marginRight="5dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/theOrange" />
+
+                <TextView
+                    android:id="@+id/tv_good_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4200"
+                    android:textSize="16dp"
+                    android:textColor="@color/theOrange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_good_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="42"
+                    android:textColor="@color/theOrange_light" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="號"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/theOrange_light" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_good_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:text="我是商品的描述我是商品的描述我是商品的描述我是商品的描述我是商品的描述我是商品的描述我是商品的描述我是商品的描述"
+                android:textColor="@color/theOrange_light" />
+
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

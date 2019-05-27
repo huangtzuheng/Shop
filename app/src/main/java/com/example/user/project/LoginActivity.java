@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.user.project.Utils.Home.MainActivity;
+
 public class LoginActivity extends AppCompatActivity {
     private EditText login_name,login_password;
     private int counter = 3;
@@ -32,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void sendString(View view) {
 
-        Intent intent = new Intent(this, Login2Activity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         login_name = (EditText) findViewById(R.id.input_email);
         login_password = (EditText) findViewById(R.id.input_password);
         String stringID = login_name.getText().toString();

@@ -1,57 +1,39 @@
 package com.example.user.project;
 
+
+
+// 資料功能類別
 public class Item {
-    private  long id;
-    private String DATETIME;
-    private String COLOR;
+    private long ID;
     private String TITLE;
-    private String PRICE;
-    private String SIZE;
+    private int PRICE;
+    private int SIZE;
     private String DESCRIPTION;
-    private String PIC1;
-    private String PIC2;
-    private String PIC3;
+    private String PICTURE;
+    private long USER_ID;
 
     public Item(){
 
     }
 
 
-    public Item(long id, String DATETIME, String COLOR, String TITLE, String PRICE, String SIZE, String DESCRIPTION, String PIC1, String PIC2, String PIC3) {
-        this.id = id;
-        this.DATETIME = DATETIME;
-        this.COLOR = COLOR;
+    public Item(long id, String TITLE, int PRICE, int SIZE, String DESCRIPTION, String PIC, long UID) {
+        this.ID = id;
+
         this.TITLE = TITLE;
         this.PRICE = PRICE;
         this.SIZE = SIZE;
         this.DESCRIPTION = DESCRIPTION;
-        this.PIC1 = PIC1;
-        this.PIC2 = PIC2;
-        this.PIC3 = PIC3;
+        this.PICTURE = PIC;
+        this.USER_ID = UID;
     }
 
     public long getId() {
-        return id;
+        return ID;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getDATETIME() {
-        return DATETIME;
-    }
-
-    public void setDATETIME(String DATETIME) {
-        this.DATETIME = DATETIME;
-    }
-
-    public String getCOLOR() {
-        return COLOR;
-    }
-
-    public void setCOLOR(String COLOR) {
-        this.COLOR = COLOR;
+    public void setID(long id) {
+        this.ID = id;
     }
 
     public String getTITLE() {
@@ -62,19 +44,19 @@ public class Item {
         this.TITLE = TITLE;
     }
 
-    public String getPRICE() {
+    public int getPRICE() {
         return PRICE;
     }
 
-    public void setPRICE(String PRICE) {
+    public void setPRICE(int PRICE) {
         this.PRICE = PRICE;
     }
 
-    public String getSIZE() {
+    public int getSIZE() {
         return SIZE;
     }
 
-    public void setSIZE(String SIZE) {
+    public void setSIZE(int SIZE) {
         this.SIZE = SIZE;
     }
 
@@ -86,27 +68,20 @@ public class Item {
         this.DESCRIPTION = DESCRIPTION;
     }
 
-    public String getPIC1() {
-        return PIC1;
+    public String getPICTURE() {
+        return PICTURE;
     }
 
-    public void setPIC1(String PIC1) {
-        this.PIC1 = PIC1;
+    public void setPICTIRE(String PIC1) {
+        this.PICTURE = PIC1;
     }
 
-    public String getPIC2() {
-        return PIC2;
+    public long getUId() {
+        return USER_ID;
     }
 
-    public void setPIC2(String PIC2) {
-        this.PIC2 = PIC2;
+    public void setUID(long uid) {
+        this.USER_ID = uid;
     }
 
-    public String getPIC3() {
-        return PIC3;
-    }
-
-    public void setPIC3(String PIC3) {
-        this.PIC3 = PIC3;
-    }
 }

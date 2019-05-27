@@ -5,42 +5,63 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
+import com.example.user.project.Item;
 import com.example.user.project.R;
 
+import com.example.user.project.User;
+import com.example.user.project.UserDAO;
+import com.squareup.picasso.Picasso;
+
+import java.util.List;
+
+
 public class GoodAdapter extends RecyclerView.Adapter<GoodAdapter.GoodAdapterViewHolder> {
-    private String[] mGoodData;
+    private List<Item> mGoodData;
     private final GoodAdapterOnClickHandler mClickHandler;
 
     public interface GoodAdapterOnClickHandler {
         void onClick(String thisGood);
     }
 
-    public GoodAdapter(String[] mData, GoodAdapterOnClickHandler clickHandler) {
+    public GoodAdapter(List<Item> mData, GoodAdapterOnClickHandler clickHandler) {
         mGoodData = mData;
         mClickHandler = clickHandler;
     }
 
     public class GoodAdapterViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
-        public TextView mGoodTextView;
+        public TextView mGoodTitle, mGoodSeller, mGoodPrice,mGoodSize, mGoodDescription;
         public LinearLayout mLinearLayout;
+        public ImageView mimageView;
+        UserDAO testU;
 
         public GoodAdapterViewHolder(View view) {
             super(view);
 
-            mGoodTextView = (TextView) view.findViewById(R.id.tv_good_data);
+            mGoodTitle = (TextView) view.findViewById(R.id.tv_good_title);
+            mGoodSeller = (TextView) view.findViewById(R.id.tv_good_seller);
+            mGoodPrice = (TextView) view.findViewById(R.id.tv_good_price);
+            mGoodSize = (TextView) view.findViewById(R.id.tv_good_size);
+            mGoodDescription = (TextView) view.findViewById(R.id.tv_good_description);
+
             mLinearLayout = (LinearLayout) view.findViewById(R.id.ll);
+
+            mimageView = (ImageView)view.findViewById(R.id.iv_goodList);
+
+            testU = new UserDAO(view.getContext());
+
             view.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
             int adapterPosition = getAdapterPosition();
-            String thisGood = mGoodData[adapterPosition];
-            mClickHandler.onClick(thisGood);
+            String thisGoodID = String.valueOf(mGoodData.get(adapterPosition).getId());
+            mClickHandler.onClick(thisGoodID);
         }
     }
 
@@ -57,18 +78,28 @@ public class GoodAdapter extends RecyclerView.Adapter<GoodAdapter.GoodAdapterVie
 
     @Override
     public void onBindViewHolder(GoodAdapterViewHolder goodAdapterViewHolder, int position) {
-        String GoodForThisOne = mGoodData[position];
-        goodAdapterViewHolder.mGoodTextView.setText(GoodForThisOne);
+        Item theGood = mGoodData.get(position);
+        User theUser = goodAdapterViewHolder.testU.get(theGood.getUId());
+
+
+        goodAdapterViewHolder.mGoodTitle.setText(theGood.getTITLE() + "(" + String.valueOf(theGood.getId()) + ")");
+        goodAdapterViewHolder.mGoodSeller.setText(theUser.getName());
+        goodAdapterViewHolder.mGoodPrice.setText(String.valueOf(theGood.getPRICE()));
+        goodAdapterViewHolder.mGoodSize.setText(String.valueOf(theGood.getSIZE()));
+        goodAdapterViewHolder.mGoodDescription.setText(theGood.getDESCRIPTION());
+
+        Picasso.get().load(theGood.getPICTURE()).fit().into(goodAdapterViewHolder.mimageView);
+
     }
 
     @Override
     public int getItemCount() {
         if (mGoodData == null) return 0;
-        return mGoodData.length;
+        return mGoodData.size();
     }
 
-    public void setGoodData(String[] goodData) {
-        mGoodData = goodData;
-        notifyDataSetChanged();
-    }
+//    public void setGoodData(String[] goodData) {
+//        mGoodData = goodData;
+//        notifyDataSetChanged();
+//    }
 }

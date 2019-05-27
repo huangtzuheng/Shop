@@ -19,13 +19,13 @@
         <ImageView
             android:id="@+id/iv_cartList"
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_toRightOf="@+id/cb_cartList" />
+            android:layout_height="100dp" />
 
         <TextView
             android:id="@+id/tv_cartList"
-            android:layout_width="match_parent"
+            android:layout_width="288dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="-4dp"
             android:layout_toRightOf="@+id/iv_cartList" />
     </RelativeLayout>
 
