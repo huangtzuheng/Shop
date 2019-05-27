@@ -8,19 +8,35 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.user.project.Item;
 import com.example.user.project.R;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartAdapterViewHolder> {
     private String[] mCartData;
     private final CartAdapter.CartAdapterOnClickHandler mClickHandler;
+    private int activityNum;
+    public static final int TYPE_ONE = 1;
+    public static final int TYPE_TWO = 2;
+
+    @Override
+    public int getItemViewType(int position) {
+        if (activityNum == 3) {
+            return TYPE_ONE;
+        } else if (activityNum == 2) {
+            return TYPE_TWO;
+        } else {
+            return -1;
+        }
+    }
 
     public interface CartAdapterOnClickHandler {
         void onClick(String thisGood);
     }
 
-    public CartAdapter(String[] mData, CartAdapter.CartAdapterOnClickHandler clickHandler) {
+    public CartAdapter(String[] mData, CartAdapter.CartAdapterOnClickHandler clickHandler, int aNum) {
         mCartData = mData;
         mClickHandler = clickHandler;
+        activityNum = aNum;
     }
 
     public class CartAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -30,8 +46,13 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartAdapterVie
         public CartAdapterViewHolder(View view) {
             super(view);
 
-            mGoodTextView = (TextView) view.findViewById(R.id.tv_cartList);
-            mRelativeLayout = (RelativeLayout) view.findViewById(R.id.rl_cartList);
+            if (activityNum == 3) {
+                mGoodTextView = (TextView) view.findViewById(R.id.tv_cartList);
+                mRelativeLayout = (RelativeLayout) view.findViewById(R.id.rl_cartList);
+            } else if (activityNum == 2) {
+                mGoodTextView = (TextView) view.findViewById(R.id.tv_notif);
+                mRelativeLayout = (RelativeLayout) view.findViewById(R.id.rv_notif);
+            }
             view.setOnClickListener(this);
         }
 
@@ -46,7 +67,12 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartAdapterVie
     @Override
     public CartAdapter.CartAdapterViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         Context context = viewGroup.getContext();
-        int layoutIdForListItem = R.layout.cart_list;
+        int layoutIdForListItem = -1;
+        if (viewType == TYPE_ONE) {
+            layoutIdForListItem = R.layout.cart_list;
+        } else if (viewType == TYPE_TWO) {
+            layoutIdForListItem = R.layout.notification_list;
+        }
         LayoutInflater inflater = LayoutInflater.from(context);
         boolean shouldAttachToParentImmediately = false;
 

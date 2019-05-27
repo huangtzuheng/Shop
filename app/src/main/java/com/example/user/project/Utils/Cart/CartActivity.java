@@ -38,7 +38,7 @@ public class CartActivity extends AppCompatActivity implements CartAdapter.CartA
                 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
-        mCartAdapter = new CartAdapter(testDataC,this);
+        mCartAdapter = new CartAdapter(testDataC,this, ACTIVITY_NUM);
         mRecyclerView.setAdapter(mCartAdapter);
 //        mButton = (Button) findViewById(R.id.bt_detail);
     }

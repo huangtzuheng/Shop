@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     private AskFragment ask = new AskFragment();
     final String[] shoesizetable = {"6", "6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "12", "12.5"};
     private double shoeselectsize;
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +62,10 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         setupViewPager();
         //  made by austin
         mToolbar = (Toolbar) findViewById(R.id.tb_home);
-        final Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner = (Spinner) findViewById(R.id.spinner);
 
-        ArrayAdapter<String> shoe = new ArrayAdapter<>(MainActivity.this,
-                android.R.layout.simple_spinner_dropdown_item, shoesizetable);
+        ArrayAdapter<String> shoe = new ArrayAdapter<>(this, R.layout.myspinner, shoesizetable);
+        shoe.setDropDownViewResource(R.layout.myspinner);
         spinner.setAdapter(shoe);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

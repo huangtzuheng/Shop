@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Utils.Detail.CartDetailActivity"></activity>
+        <activity android:name=".Utils.Detail.NotificationDetailActivity"></activity>
+        <activity android:name=".Utils.Detail.CartDetailActivity" />
         <activity
             android:name=".Utils.Home.SearchableActivity"
             android:launchMode="singleTop"
