@@ -42,7 +42,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
                 + "DESCRIPTION" + " text, "
                 + "PIC" + " text , "
                 + "PIC2" + " text , "
-                + "PIC3" + " text , " + ");";
+                + "PIC3" + " text )";
 
 
         db.execSQL(TABLE);
